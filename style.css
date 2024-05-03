@@ -1,0 +1,189 @@
+/*reset css*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+font-family:'Roboto',sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/* START OF CSS*/
+
+
+#container {
+    display: flex;  
+    height: 100vh;
+}
+
+
+
+.left {        
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    background-image: url("./src/pokerchip.jpg");
+    background-size: cover;
+    color:white;
+    width: 50%;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        margin-top: 15vh;
+        padding: 3rem;
+        background-color: rgba(255, 255, 255, 0.582);  
+        font-size: 96px;  
+        color: red;   
+       
+        span {
+            font-size: 72px;
+        }   
+    }
+    .left-footer{
+        text-align: center; 
+        margin-bottom: 1rem;          
+    }
+}
+
+ 
+
+
+
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    text-align: left;
+    width: 50%;
+    background-color:#f1f1f1;
+
+
+    
+    .main{
+
+        .intro-text{
+            padding:1rem 1rem ;
+            font-size: 24px;
+            font-weight: 600;   
+            line-height: 120%;
+            letter-spacing: 1px;
+            word-spacing: 4px;
+            
+            h3{
+                margin-top: 2rem;
+                margin-bottom: 4rem;
+            }
+        }
+
+        .form-container{
+            background-color: white;
+            padding:1rem 1rem ;
+            box-shadow:0px 5px 10px silver;
+
+            p{
+                font-size: 24px;
+                font-weight: 500;
+                margin-bottom: 1rem;
+            }
+        
+
+            form{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                gap: 10px;
+                label{
+                    font-size: 16px;
+                    letter-spacing: 3px;
+                    word-spacing: 6px;
+                    width: 40%;
+                    display: flex;
+                    flex-direction: column; 
+                     
+                    
+                    input{
+                        border: 2px solid rgba(0, 0, 0, 0.096);
+                        border-radius: 2px;
+                        font-size: 24px;
+                        padding: 3px;
+                        
+                    }
+                }              
+            }
+        }
+    }
+    .right-footer{
+        padding: 1rem 1rem; 
+        
+
+        
+        button{
+            margin: 30px 0;
+            flex-grow: 0;
+            padding: 1rem 3rem;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            border: 0;
+            color: white;
+            background-color: red;
+        }
+
+        a{
+            font-weight: 600;
+            color: red;
+            text-decoration: none;
+        }
+        
+
+
+    }
+    
+}
+
+
+
